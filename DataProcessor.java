@@ -38,35 +38,3 @@ public class DataProcessor {
     }
 }
 
-// import java.io.BufferedWriter;
-// import java.io.FileWriter;
-// import java.io.IOException;
-
-// public class DataProcessor {
-//     public void processData(Person person) {
-//         try {
-//             // Формирование имени файла
-//             String filename = person.getLastName() + ".txt";
-
-//             // Создание объекта FileWriter для записи в файл с кодировкой UTF-8
-//             FileWriter fileWriter = new FileWriter(filename, true);
-
-//             // Создание объекта BufferedWriter для эффективной записи
-//             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-
-//             // Запись данных о персоне в файл
-//             bufferedWriter.write(person.getLastName() + " " + person.getFirstName() + " " + person.getMiddleName() + " "
-//                     + person.getBirthDate() + " " + person.getPhoneNumber() + " " + person.getGender() + "\n");
-
-//             // Закрытие BufferedWriter
-//             bufferedWriter.close();
-
-//             System.out.println("Данные успешно записаны в файл.");
-//         } catch (IOException e) {
-//             // В случае возникновения ошибки ввода-вывода
-//             System.out.println("Ошибка при записи данных в файл: " + e.getMessage());
-//             e.printStackTrace();
-//         }
-//     }
-// }
-
